@@ -27,6 +27,7 @@ Added a tiny extra and changed the text of the toggle depending on the theme sel
 -   CSS Grid
 -   Mobile-first workflow
 -   Pure JS
+-   ADA Ready - Had to adjust the colors for the raise/lower text and triangle
 
 ### What I learned
 
