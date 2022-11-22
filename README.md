@@ -7,8 +7,8 @@ Added a tiny extra and changed the text of the toggle depending on the theme sel
 ### Screenshots
 
 <p align="center">
-  <img src="./screenshot.png">
-  <img src="./screenshot-2.png">
+  <img src="screenshot.png">
+  <img src="screenshot-2.png">
 </p>
 
 ### Links
