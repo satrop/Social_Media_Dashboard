@@ -1,32 +1,32 @@
 # <a href="https://satrop.github.io/Social_Media_Dashboard/dist/">Frontend Mentor - Social media dashboard with theme switcher solution</a>
 
-This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 Added a tiny extra and changed the text of the toggle depending on the theme selected with CSS.
 
 ### Screenshots
 
 <p align="center">
-  <img src="screenshot.png">
-  <img src="screenshot-2.png">
+  <img src="./dist/img/Screenshot.png" alt='Dark theme screenshot'>
+  <img src="./dist/img/Screenshot-2.png" alt='Light theme screenshot'>
 </p>
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/satrop/Social_Media_Dashboard)
-- Live Site URL: [Working Site](https://satrop.github.io/Social_Media_Dashboard/dist/)
+-   Solution URL: [Solution](https://github.com/satrop/Social_Media_Dashboard)
+-   Live Site URL: [Working Site](https://satrop.github.io/Social_Media_Dashboard/dist/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- SCSS
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- Pure JS
+-   Semantic HTML5 markup
+-   SCSS
+-   CSS custom properties
+-   Flexbox
+-   CSS Grid
+-   Mobile-first workflow
+-   Pure JS
 
 ### What I learned
 
@@ -46,9 +46,9 @@ Another new trick I learnt was using media query mixins, for lack of a better te
 	}
 }
 ```
-This is very useful when only needing to update a few properties. If I were doing anymore that one or two I would stick with the traditional method of adding the larger breakpoints after mobile 
+
+This is very useful when only needing to update a few properties. If I were doing anymore that one or two I would stick with the traditional method of adding the larger breakpoints after mobile
 
 ### Continued development
 
-As always, I'm trying to learn something new every day and every build. 
-
+As always, I'm trying to learn something new every day and every build.
