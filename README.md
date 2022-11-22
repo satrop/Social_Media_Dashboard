@@ -6,9 +6,10 @@ Added a tiny extra and changed the text of the toggle depending on the theme sel
 
 ### Screenshots
 
-![](./screenshot.png)
-![](./screenshot-2.png)
-
+<p align="center">
+  <img src="./screenshot.png">
+  <img src="./screenshot-2.png">
+</p>
 
 ### Links
 
