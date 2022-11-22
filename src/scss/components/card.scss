@@ -1,0 +1,139 @@
+@use '../utils' as u;
+@use 'triangle' as t;
+
+.icon {
+	width: 20px;
+	height: 20px;
+}
+
+.card {
+	background-color: var(--card-bkgrnd);
+	padding-block: u.rem(26);
+	padding-inline: u.rem(24);
+	border-radius: 5px;
+	overflow: hidden;
+
+	// Large cards
+	&--lg {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: u.rem(25);
+		padding: u.rem(32);
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 4px;
+		}
+
+		&.card--type-facebook {
+			&::before {
+				background-color: var(--clr-facebook);
+			}
+		}
+
+		&.card--type-instagram {
+			&::before {
+				background-image: linear-gradient(
+					90deg,
+					var(--instagram-gradient-1),
+					var(--instagram-gradient-2)
+				);
+			}
+		}
+
+		&.card--type-twitter {
+			&::before {
+				background-color: var(--clr-twitter);
+			}
+		}
+
+		&.card--type-youtube {
+			&::before {
+				background-color: var(--clr-youtube);
+			}
+		}
+
+		.icon {
+			margin-right: 8px;
+		}
+
+		.type {
+			font-size: u.rem(12);
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			color: var(--text-2-clr);
+		}
+	}
+
+	//Small cards
+	&--sm {
+		display: flex;
+		flex-direction: column;
+		gap: u.rem(20);
+
+		.card__header,
+		.card__footer {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.card__footer {
+			align-items: baseline;
+		}
+	}
+
+	&__user,
+	&__tracking {
+		font-size: u.rem(12);
+		font-weight: 700;
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+
+	&__user {
+		display: flex;
+	}
+
+	&__number {
+		font-size: u.rem(54);
+		font-weight: 700;
+		letter-spacing: -2px;
+		line-height: 48px;
+
+		.type {
+			margin-top: 10px;
+			line-height: 1.2;
+		}
+	}
+
+	// Helper classes on parent ==========
+	&--tracking-up {
+		.card__tracking {
+			color: var(--clr-lime-green);
+
+			&::before {
+				@include t.arrow('up', var(--clr-lime-green));
+			}
+		}
+	}
+
+	&--tracking-down {
+		.card__tracking {
+			color: var(--clr-bright-red);
+
+			&::before {
+				@include t.arrow('down', var(--clr-bright-red));
+			}
+		}
+	}
+}

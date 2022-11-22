@@ -1,0 +1,13 @@
+@mixin arrow($direction: up, $color) {
+	content: '';
+	border: 4px solid transparent;
+	margin-right: 5px;
+
+	@if $direction == 'up' {
+		margin-top: -4px;
+		border-bottom-color: $color;
+	} @else if $direction == 'down' {
+		margin-top: 4px;
+		border-top-color: $color;
+	}
+}

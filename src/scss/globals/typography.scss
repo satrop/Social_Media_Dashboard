@@ -1,0 +1,50 @@
+@use '../utils' as u;
+
+body,
+h1,
+h2 {
+	font-family: var(--main-font);
+}
+
+h1,
+h2 {
+	color: var(--text-1-clr);
+	font-size: u.rem(24);
+	line-height: 29px;
+
+	@include u.breakpoint(lg) {
+		font-size: u.rem(28);
+		line-height: 33px;
+	}
+}
+
+h2 {
+	color: var(--text-2-clr);
+	margin-top: 46px;
+	margin-bottom: 26px;
+}
+
+.sub-header {
+	font-size: u.rem(14);
+	line-height: 16px;
+}
+
+.card__number {
+	color: var(--text-1-clr);
+}
+
+.sub-header,
+.card__header,
+.card__user {
+	color: var(--text-2-clr);
+}
+
+.card__tracking {
+	&.up {
+		color: var(--clr-line-green);
+	}
+
+	&.down {
+		color: var(--clr-bright-red);
+	}
+}

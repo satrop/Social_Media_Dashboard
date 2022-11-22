@@ -1,0 +1,109 @@
+:root {
+	--clr-lime-green: hsl(163, 72%, 41%);
+	--clr-bright-red: hsl(356, 69%, 56%);
+
+	// Social Colors
+	--instagram-gradient-1: hsl(37, 97%, 70%);
+	--instagram-gradient-2: hsl(329, 70%, 58%);
+	--clr-facebook: hsl(208, 92%, 53%);
+	--clr-twitter: hsl(203, 89%, 53%);
+	--clr-youtube: hsl(348, 97%, 39%);
+
+	//Toggle
+	--toggle-gradient-1: hsl(210, 78%, 56%);
+	--toggle-gradient-2: hsl(146, 68%, 55%);
+}
+
+// Automatically set theme via users settings
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bkgrnd: hsl(230, 17%, 14%);
+		--bkgrnd-head: hsl(230, 20%, 15%);
+
+		// Toggle Background
+		.theme-toggle {
+			background-image: linear-gradient(
+				90deg,
+				var(--toggle-gradient-1),
+				var(--toggle-gradient-2)
+			);
+		}
+
+		// Toggle Button
+		--toggle-button: hsl(228, 25%, 27%);
+
+		//Card
+		--card-bkgrnd: hsl(228, 28%, 20%);
+
+		// Text
+		--text-1-clr: hsl(0, 0%, 100%);
+		--text-2-clr: hsl(228, 34%, 66%);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bkgrnd: hsl(0, 0%, 100%);
+		--bkgrnd-head: hsl(277, 91%, 98%);
+
+		// Toggle Background
+		theme-toggle {
+			background-image: none;
+			background-color: hsla(230, 22%, 74%, 1);
+		}
+
+		// Toggle Button
+		--toggle-button: hsl(230, 22%, 74%);
+
+		//Card
+		--card-bkgrnd: hsl(227, 47%, 96%);
+
+		// Text
+		--text-1-clr: hsl(230, 17%, 14%);
+		--text-2-clr: hsl(228, 12%, 44%);
+	}
+}
+
+// Set theme with class toggle
+/* This root:has selector doesn't work in Firefox (behind flag) yet
+	so using the fall back JS method to toggle class name */
+// :root:has(#dark:checked)
+body.dark-mode {
+	--bkgrnd: hsl(230, 17%, 14%);
+	--bkgrnd-head: hsl(230, 20%, 15%);
+
+	// Toggle Background
+	.theme-toggle {
+		background-image: linear-gradient(
+			90deg,
+			var(--toggle-gradient-1),
+			var(--toggle-gradient-2)
+		);
+	}
+
+	//Card
+	--card-bkgrnd: hsl(228, 28%, 20%);
+
+	// Text
+	--text-1-clr: hsl(0, 0%, 100%);
+	--text-2-clr: hsl(228, 34%, 66%);
+}
+
+// :root:has(#light:checked),
+body:not(.dark-mode) {
+	--bkgrnd: hsl(0, 0%, 100%);
+	--bkgrnd-head: hsl(277, 91%, 98%);
+
+	// Toggle Background
+	.theme-toggle {
+		background-image: none;
+		background-color: hsla(230, 22%, 74%, 1);
+	}
+
+	//Card
+	--card-bkgrnd: hsl(227, 47%, 96%);
+
+	// Text
+	--text-1-clr: hsl(230, 17%, 14%);
+	--text-2-clr: hsl(228, 12%, 44%);
+}
