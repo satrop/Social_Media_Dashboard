@@ -7,11 +7,16 @@
 }
 
 .card {
+	text-decoration: none;
 	background-color: var(--card-bkgrnd);
 	padding-block: u.rem(26);
 	padding-inline: u.rem(24);
 	border-radius: 5px;
 	overflow: hidden;
+
+	&:hover {
+		background-color: var(--card-bkgrnd-hover);
+	}
 
 	// Large cards
 	&--lg {

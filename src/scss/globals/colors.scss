@@ -14,6 +14,8 @@
 // Automatically set theme via users settings
 @media (prefers-color-scheme: dark) {
 	:root {
+		--highlight: hsl(230, 20%, 15%);
+
 		--clr-lime-green: hsl(163, 72%, 41%);
 		// Removed for accessibility reasons
 		// --clr-bright-red: hsl(356, 69%, 56%);
@@ -36,6 +38,7 @@
 
 		//Card
 		--card-bkgrnd: hsl(228, 28%, 20%);
+		--card-bkgrnd-hover: hsl(228, 28%, 27%);
 
 		// Text
 		--text-1-clr: hsl(0, 0%, 100%);
@@ -45,6 +48,8 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
+		--highlight: hsl(227, 91%, 98%);
+
 		--clr-lime-green: hsl(163, 75%, 17%);
 		// Removed for accessibility reasons
 		// --clr-bright-red: hsl(356, 69%, 56%);
@@ -64,6 +69,7 @@
 
 		//Card
 		--card-bkgrnd: hsl(227, 47%, 96%);
+		--card-bkgrnd-hover: hsl(227, 47%, 90%);
 
 		// Text
 		--text-1-clr: hsl(230, 17%, 14%);
@@ -76,6 +82,8 @@
 	so using the fall back JS method to toggle class name */
 // :root:has(#dark:checked)
 body.dark-mode {
+	--highlight: hsl(230, 20%, 15%);
+
 	--clr-lime-green: hsl(163, 72%, 41%);
 	// Removed for accessibility reasons
 	// --clr-bright-red: hsl(356, 69%, 56%);
@@ -95,6 +103,7 @@ body.dark-mode {
 
 	//Card
 	--card-bkgrnd: hsl(228, 28%, 20%);
+	--card-bkgrnd-hover: hsl(228, 28%, 27%);
 
 	// Text
 	--text-1-clr: hsl(0, 0%, 100%);
@@ -103,6 +112,8 @@ body.dark-mode {
 
 // :root:has(#light:checked),
 body:not(.dark-mode) {
+	--highlight: hsl(227, 91%, 98%);
+
 	--clr-lime-green: hsl(163, 75%, 17%);
 	// Removed for accessibility reasons
 	// --clr-bright-red: hsl(356, 69%, 56%);
@@ -119,6 +130,7 @@ body:not(.dark-mode) {
 
 	//Card
 	--card-bkgrnd: hsl(227, 47%, 96%);
+	--card-bkgrnd-hover: hsl(227, 47%, 90%);
 
 	// Text
 	--text-1-clr: hsl(230, 17%, 14%);
